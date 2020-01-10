@@ -11,7 +11,7 @@ ymin=0, ymax=7
 ]
 
 \addplot [
-color=uablue,
+color=lsblue,
 solid,
 line width=1pt
 ] coordinates{
@@ -19,7 +19,7 @@ line width=1pt
 };
 
 \addplot [
-color=uared,
+color=lsred,
 solid,
 line width=1pt
 ] coordinates{
@@ -27,7 +27,7 @@ line width=1pt
 };
 
 \addplot [
-color=uablue50,
+color=lsblue50,
 solid,
 line width=1pt
 ] coordinates{
@@ -35,7 +35,7 @@ line width=1pt
 };
 
 \addplot [
-color=uared50,
+color=lsred50,
 solid,
 line width=1pt
 ] coordinates{
@@ -43,7 +43,7 @@ line width=1pt
 };
 
 \addplot [
-color=uablue25,
+color=lsblue25,
 solid,
 line width=1pt
 ] coordinates{
@@ -51,7 +51,7 @@ line width=1pt
 };
 
 \addplot [
-color=uared25,
+color=lsred25,
 solid,
 line width=1pt
 ] coordinates{

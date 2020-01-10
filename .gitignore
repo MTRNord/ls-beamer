@@ -24,4 +24,5 @@
 *.thm
 *.bcf
 *.xml
-example/lsBeamerExample.pdf
+doc/example/lsBeamerExample.pdf
+doc/manual/beamerstyleLsDocumentation.pdf

@@ -14,8 +14,8 @@ typically `~/texmf`. Running `texhash` may be required.
 
 You can check the integrity of your installation with
 ```
-$ kpsewhich beamerfontthemeUniversiteitAntwerpen.sty
-/home/username/texmf/tex/latex/ls-beamer/theme/beamerfontthemeUniversiteitAntwerpen.sty
+$ kpsewhich beamerfontthemeLornsenschuleSchleswig.sty
+/home/username/texmf/tex/latex/ls-beamer/theme/beamerfontthemeLornsenschuleSchleswig.sty
 ```
 
 ### Usage
