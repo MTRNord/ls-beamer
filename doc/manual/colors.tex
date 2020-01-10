@@ -7,7 +7,7 @@ If you don't care about the technical details, you can skip this and directly
 go to subsection~\ref{subsection:usingthecolors}.
 \end{note}
 
-The two official colors of the UA, a blue and a red tone, are originally given
+The two official colors of the LS, a blue and a red tone, are originally given
 in PMS format, a \emph{proprietary} format issued by the Pantone Inc.\
 corporation. One particular feature of the PMS color format is that it is, as
 opposed to RGB or CMYK, \emph{device independent}. This means that the
@@ -50,7 +50,7 @@ device-dependence of PMS.
 %To overcome the undesired side-effects of working with the official UA
 %corporate design in a non-PMS environment (like most beamers and computer
 %screens should provide),
-That is why this theme aims to use non-PMS versions of the UA's official
+That is why this theme aims to use non-PMS versions of the LS's official
 colors, including modified versions of the logos.
 
 \begin{table}
@@ -59,32 +59,32 @@ colors, including modified versions of the logos.
 \setlength{\boxsize}{2cm}
 
 \begin{tabular}{cccc}
-\definecolor{uablue11}{RGB}{  0, 61,100}
-\colorbox{uablue11}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
+\definecolor{lsblue11}{RGB}{  0, 61,100}
+\colorbox{lsblue11}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
 &
-\definecolor{uablue12}{cmyk}{1,0.3,0,0.62}
-\colorbox{uablue12}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
+\definecolor{lsblue12}{cmyk}{1,0.3,0,0.62}
+\colorbox{lsblue12}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
 &
-\definecolor{uablue13}{RGB}{0,96,128}
-\colorbox{uablue13}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
+\definecolor{lsblue13}{RGB}{0,96,128}
+\colorbox{lsblue13}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
 &
-\definecolor{uablue14}{cmyk}{1,0.25,0,0.5}
-\colorbox{uablue14}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}\\[2mm]
-\definecolor{uared11}{RGB}{126,  0, 47}
-\colorbox{uared11}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
+\definecolor{lsblue14}{cmyk}{1,0.25,0,0.5}
+\colorbox{lsblue14}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}\\[2mm]
+\definecolor{lsred11}{RGB}{126,  0, 47}
+\colorbox{lsred11}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
 &
-\definecolor{uared11}{cmyk}{0,1,0.54,0.46}
-\colorbox{uared11}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
+\definecolor{lsred11}{cmyk}{0,1,0.54,0.46}
+\colorbox{lsred11}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
 &
-\definecolor{uared11}{RGB}{161,0,64}
-\colorbox{uared11}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
+\definecolor{lsred11}{RGB}{161,0,64}
+\colorbox{lsred11}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
 &
-\definecolor{uared11}{cmyk}{0,1,0.6,0.37}
-\colorbox{uared11}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
+\definecolor{lsred11}{cmyk}{0,1,0.6,0.37}
+\colorbox{lsred11}{\rule{0mm}{\boxsize}\rule{\boxsize}{0mm}}
 \end{tabular}
 
 \caption{PMS 302 and PMS 1955 translated to CMYK/RGB in different ways. Left to
-right: UA website \cite{KAN::} RGB, UA website \cite{KAN::} CMYK, conversion
+right: LS website \cite{KAN::} RGB, LS website \cite{KAN::} CMYK, conversion
 chart~\cite{::TDC} RGB, conversion chart~\cite{::TDC} \@CMYK. To determine which
 version is closest to the actual colors PMS 1955 and PMS 302 on your
 monitor/printer/beamer, you would need a physical color sample (such as
@@ -94,7 +94,7 @@ provided on the Pantone\textsuperscript{\textregistered} charts) to compare.}
 
 Now, as explained above there is no device-independent conversion between the
 original PMS directives and the CMYK color space; several tables exist which
-are valid for different work environments. On the official sites of the UA
+are valid for different work environments. On the official sites of the LS
 \cite{KAN::}, you'll find particular RGB and CMYK values, other resources,
 e.g., \cite{::TDC}, provide other numbers (see table~\ref{table:reds-blues}).
 
@@ -113,7 +113,7 @@ be controlled by the user, and that is the colors that are used in the running
 text, tables, and figures.
 
 Although essentially consistent of only two colors, within \texttt{beamer}
-referred to as \lstinline!uablue! and \lstinline!uared!, provide more diversity
+referred to as \lstinline!lsblue! and \lstinline!lsred!, provide more diversity
 than one might expect and should be  \emph{exclusively} used  in all the
 slides. The user should be aware that this directive includes \emph{tables,
 figures, and graphics of most kinds}. For an example of usage see
@@ -132,7 +132,7 @@ also the exception color.}
 If you need to emphasize a particular aspect in your slides (graphs, tables),
 you can (within \texttt{beamer}) use the \lstinline!\alert{}! macro (e.g.,
 \lstinline!\alert{This is alerted text.}!). For the situation where something
-needs to stick out in a pie chart, for example, where the ordinary colors (UA
+needs to stick out in a pie chart, for example, where the ordinary colors (LS
 blue and red) have been used up already, a third color has been added (see
 table~\ref{table:allcolors}). It is to be used scarcely and strictly for
 highlighting purposes (see, for example, figure~\ref{fig:coloredgraphs}).
@@ -142,23 +142,23 @@ highlighting purposes (see, for example, figure~\ref{fig:coloredgraphs}).
 \setlength{\figurewidth}{12mm}
 \centering
 \begin{tabulary}{\textwidth}{LCCC}\toprule
-Color sample & \colorsquare{\figurewidth}{uablue100} & \colorsquare{\figurewidth}{uablue75} & \colorsquare{\figurewidth}{uablue50}\\
+Color sample & \colorsquare{\figurewidth}{lsblue100} & \colorsquare{\figurewidth}{lsblue75} & \colorsquare{\figurewidth}{lsblue50}\\
 CMYK & (100, 30, 0, 62) & (75, 23, 0, 47) & (50, 15, 0, 31)\\
 RGB  & (0, 61, 100)     & (40, 128, 158)  & (96, 166, 191)\\
-\texttt{beamer} name & \lstinline!uablue100! & \lstinline!uablue75! & \lstinline!uablue50!\\[3mm]
-Color sample & \colorsquare{\figurewidth}{uablue25} & \colorsquare{\figurewidth}{uablue10} & \colorsquare{\figurewidth}{uablue5}\\
+\texttt{beamer} name & \lstinline!lsblue100! & \lstinline!lsblue75! & \lstinline!lsblue50!\\[3mm]
+Color sample & \colorsquare{\figurewidth}{lsblue25} & \colorsquare{\figurewidth}{lsblue10} & \colorsquare{\figurewidth}{lsblue5}\\
 CMYK & (25, 8, 0, 16)  & (10, 3, 0, 6)   & (5, 2, 0, 3)\\
 RGB  & (166, 209, 222) & (218, 235, 242) & (235, 245, 247)\\
-\texttt{beamer} name & \lstinline!uablue25! & \lstinline!uablue10! & \lstinline!uablue5!\\\midrule
+\texttt{beamer} name & \lstinline!lsblue25! & \lstinline!lsblue10! & \lstinline!lsblue5!\\\midrule
 
-Color sample & \colorsquare{\figurewidth}{uared100} & \colorsquare{\figurewidth}{uared75} & \colorsquare{\figurewidth}{uared50}\\
+Color sample & \colorsquare{\figurewidth}{lsred100} & \colorsquare{\figurewidth}{lsred75} & \colorsquare{\figurewidth}{lsred50}\\
 CMYK & (0, 100, 54, 46) & (0, 75, 41, 35) & (0, 50, 27, 23)\\
 RGB  & (161, 0, 64)     & (184, 46, 101)  & (207, 103, 145)\\
-\texttt{beamer} name & \lstinline!uared100! & \lstinline!uared75! & \lstinline!uared50!\\[3mm]
-Color sample & \colorsquare{\figurewidth}{uared25} & \colorsquare{\figurewidth}{uared10} & \colorsquare{\figurewidth}{uared5}\\
+\texttt{beamer} name & \lstinline!lsred100! & \lstinline!lsred75! & \lstinline!lsred50!\\[3mm]
+Color sample & \colorsquare{\figurewidth}{lsred25} & \colorsquare{\figurewidth}{lsred10} & \colorsquare{\figurewidth}{lsred5}\\
 CMYK & (0, 25, 14, 12)  & (0, 10, 5, 5)   & (0, 5, 3, 2)\\
 RGB  & (232, 174, 197) & (245, 220, 230) & (250, 237, 242)\\
-\texttt{beamer} name & \lstinline!uared25! & \lstinline!uared10! & \lstinline!uared5!\\\midrule
+\texttt{beamer} name & \lstinline!lsred25! & \lstinline!lsred10! & \lstinline!lsred5!\\\midrule
 
 Color sample & \colorsquare{\figurewidth}{vividbrown} & \colorsquare{\figurewidth}{vividbrown75} & \colorsquare{\figurewidth}{vividbrown50}\\
 CMYK & (0, 28, 67, 16) & (0, 20, 48, 12) & (0, 13, 31, 8)\\
@@ -178,19 +178,19 @@ RGB  & (245, 230, 209)  & (251, 245, 237) & (253, 250, 246)\\
 %\begin{tabular*}{\textwidth}{cc}
 %\toprule
 %Category 1 &
-%\colorbox{uablue100}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
-%\colorbox{uablue75}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
-%\colorbox{uablue50}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
-%\colorbox{uablue25}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
-%\colorbox{uablue10}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
-%\colorbox{uablue5}{\rule{0mm}{5mm}\rule{5mm}{0mm}}\\
+%\colorbox{lsblue100}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
+%\colorbox{lsblue75}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
+%\colorbox{lsblue50}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
+%\colorbox{lsblue25}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
+%\colorbox{lsblue10}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
+%\colorbox{lsblue5}{\rule{0mm}{5mm}\rule{5mm}{0mm}}\\
 %&
-%\colorbox{uared100}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
-%\colorbox{uared75}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
-%\colorbox{uared50}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
-%\colorbox{uared25}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
-%\colorbox{uared10}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
-%\colorbox{uared5}{\rule{0mm}{5mm}\rule{5mm}{0mm}}\\\midrule
+%\colorbox{lsred100}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
+%\colorbox{lsred75}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
+%\colorbox{lsred50}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
+%\colorbox{lsred25}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
+%\colorbox{lsred10}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
+%\colorbox{lsred5}{\rule{0mm}{5mm}\rule{5mm}{0mm}}\\\midrule
 %Category 2 &
 %\colorbox{col22}{\rule{0mm}{5mm}\rule{5mm}{0mm}}
 %\colorbox{col22!75!white}{\rule{0mm}{5mm}\rule{5mm}{0mm}}

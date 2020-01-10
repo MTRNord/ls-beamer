@@ -9,23 +9,23 @@
 
 
 % =========================================================================
-% A good guess on what the UA colors could be.
+% A good guess on what the ls colors could be.
 % -- The website is unfortunately not to the point there.
-\definecolor{uablue}{RGB}{0,61,100}
-\colorlet{uablue100}{uablue}
-\colorlet{uablue75} {uablue!75!white}
-\colorlet{uablue50} {uablue!50!white}
-\colorlet{uablue25} {uablue!25!white}
-\colorlet{uablue10} {uablue!10!white}
-\colorlet{uablue5}  {uablue!5!white}
+\definecolor{lsblue}{RGB}{0,61,100}
+\colorlet{lsblue100}{lsblue}
+\colorlet{lsblue75} {lsblue!75!white}
+\colorlet{lsblue50} {lsblue!50!white}
+\colorlet{lsblue25} {lsblue!25!white}
+\colorlet{lsblue10} {lsblue!10!white}
+\colorlet{lsblue5}  {lsblue!5!white}
 
-\definecolor{uared}{RGB}{126,0,47}
-\colorlet{uared100}{uared}
-\colorlet{uared75} {uared!75!white}
-\colorlet{uared50} {uared!50!white}
-\colorlet{uared25} {uared!25!white}
-\colorlet{uared10} {uared!10!white}
-\colorlet{uared5}  {uared!5!white}
+\definecolor{lsred}{RGB}{126,0,47}
+\colorlet{lsred100}{lsred}
+\colorlet{lsred75} {lsred!75!white}
+\colorlet{lsred50} {lsred!50!white}
+\colorlet{lsred25} {lsred!25!white}
+\colorlet{lsred10} {lsred!10!white}
+\colorlet{lsred5}  {lsred!5!white}
 
 \definecolor{vividbrown}{RGB}{215,154,70}
 \colorlet{vividbrown100}{vividbrown}
@@ -42,15 +42,15 @@
   \setbeamercolor{structure}{fg=white}%
   \setbeamercolor{normal text}{fg=white}%
   \setbeamercolor{frametitle}{fg=white}%
-  \setbeamercolor{frame number in foot}{fg=uablue}%
+  \setbeamercolor{frame number in foot}{fg=lsblue}%
 
   \setbeamercolor{frame number in head}{fg=white}%
 
 \else%
 
-  \setbeamercolor{structure}{fg=uablue}%
-  \setbeamercolor{normal text}{fg=uablue}%
-  \setbeamercolor{frametitle}{fg=uablue}%
+  \setbeamercolor{structure}{fg=lsblue}%
+  \setbeamercolor{normal text}{fg=lsblue}%
+  \setbeamercolor{frametitle}{fg=lsblue}%
 
   \setbeamercolor{frame number in foot}{fg=white}%
 
@@ -58,7 +58,7 @@
       \setbeamercolor{title}{fg=white}%
       \setbeamercolor{subtitle}{fg=white}%
   \else
-      \setbeamercolor{subtitle}{fg=uared}%
+      \setbeamercolor{subtitle}{fg=lsred}%
   \fi
 
 \fi
@@ -66,18 +66,18 @@
 
 % =======================================================================
 % alert color
-\setbeamercolor{alerted text}{fg=uared}
+\setbeamercolor{alerted text}{fg=lsred}
 % =======================================================================
 
 % =======================================================================
 % blocks
-\setbeamercolor{block title}{use=structure,fg=white,bg=uablue}
-\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=uared}
-\setbeamercolor{block title example}{use=example text,fg=white,bg=uablue}
+\setbeamercolor{block title}{use=structure,fg=white,bg=lsblue}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=lsred}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=lsblue}
 
-\setbeamercolor{block body}        {fg=uablue,use=block title,bg=uablue10}
-\setbeamercolor{block body alerted}{fg=uablue,use=block title alerted,bg=uared10}
-\setbeamercolor{block body example}{fg=uablue,use=block title example,bg=uablue10}
+\setbeamercolor{block body}        {fg=lsblue,use=block title,bg=lsblue10}
+\setbeamercolor{block body alerted}{fg=lsblue,use=block title alerted,bg=lsred10}
+\setbeamercolor{block body example}{fg=lsblue,use=block title example,bg=lsblue10}
 % =======================================================================
 
 

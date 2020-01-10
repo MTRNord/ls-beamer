@@ -8,7 +8,7 @@ BIBTEX:=biber
 
 # ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 
-TARGET:=beamerstyleUaDocumentation
+TARGET:=beamerstyleLsDocumentation
 
 # ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 # 

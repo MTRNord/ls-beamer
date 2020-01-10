@@ -49,7 +49,7 @@
 % ----------------------------------------------------------------------------
 % *** DEFINE IMAGES <<<
 % ----------------------------------------------------------------------------
-\pgfdeclareimage[width=\ulogowidth]{ULogo}{logo_UA_U_kl3}
+\pgfdeclareimage[width=\ulogowidth]{ULogo}{logo_LS_U_kl3}
 
 % The text logo is a bit of a special case:
 % As given in the PowerPoint(R) slides, the logo is 3.12''x0.36'', the picture file
@@ -58,22 +58,22 @@
 % The PDF that we use here does not have any margins, so adapt the sizes here.
 \newlength{\textlogoheight}
 \setlength{\textlogoheight}{0.37218461538461539cm}% 0.36in* 64/127 *2.54cm/in * 42px/52px
-\pgfdeclareimage[height=\textlogoheight]{uTextColor}{logo_UA_tekst_kl}
+\pgfdeclareimage[height=\textlogoheight]{uTextColor}{logo_LS_tekst_kl}
 
 \ifthenelse{ \boolean{beamer@dark} \OR \boolean{beamer@darktitle} }
 % then
-{\pgfdeclareimage[width=\paperwidth]{uaBackgroundDark}{uaBackgroundDarkBlue}}
+{\pgfdeclareimage[width=\paperwidth]{lsBackgroundDark}{lsBackgroundDarkBlue}}
 %else
 {}
 
 \ifbeamer@dark%
-  \pgfdeclareimage[width=\paperwidth]{uaBackgroundLight}{uaBackgroundLightBlue}
+  \pgfdeclareimage[width=\paperwidth]{lsBackgroundLight}{lsBackgroundLightBlue}
 \else%
   \newlength{\wavewidth}
   \setlength{\wavewidth}{11.6352cm}% 9.09in* 64/127 *2.54cm/in
   \newlength{\waveheight}
   \setlength{\waveheight}{0.7936cm}% 0.62in* 64/127 *2.54cm/in
-  \pgfdeclareimage[width=\wavewidth,height=\waveheight]{uWave}{uabottomwave}
+  \pgfdeclareimage[width=\wavewidth,height=\waveheight]{uWave}{lsbottomwave}
 \fi
 % ----------------------------------------------------------------------------
 % *** END DEFINE IMAGES <<<
@@ -85,7 +85,7 @@
 % *** HEADLINE <<<
 % ----------------------------------------------------------------------------
 \ifthenelse{ \boolean{beamer@dark} \OR \(\boolean{beamer@darktitle}\AND\c@framenumber=1\) }{%
-  \defbeamertemplate*{headline}{ua theme}%
+  \defbeamertemplate*{headline}{ls theme}%
   {
     % page number
     \ifbeamer@framenumber%
@@ -104,7 +104,7 @@
 }{
   \newlength{\logotopmargin}%
   \setlength{\logotopmargin}{0.704cm}%  0.55in* 64/127 *2.54cm/in
-  \defbeamertemplate*{headline}{ua theme}%
+  \defbeamertemplate*{headline}{ls theme}%
   {%
     % TODO Don't \vskip if the title is too long!
     \vskip\logotopmargin%
@@ -139,7 +139,7 @@
   \setlength{\frametitlewidth}{\textwidth-\ulogowidth-\ulogopadding}
 \fi
 
-\defbeamertemplate*{frametitle}{ua theme}
+\defbeamertemplate*{frametitle}{ls theme}
 {%
   \ifbeamer@dark%
     % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -198,7 +198,7 @@
 \newcommand{\uWavePos}{\pgfpoint{\paperwidth}{0cm}}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-\defbeamertemplate*{footline}{ua theme dark}
+\defbeamertemplate*{footline}{ls theme dark}
 {%
   \ifthenelse{ \boolean{beamer@dark} \OR \(\boolean{beamer@darktitle}\AND\c@framenumber=1\) }
   % *** THEN *** dark footline
@@ -208,7 +208,7 @@
   }
   % *** ELSE *** light footline
   {%
-     % conditionally put the ua text logo on the page
+     % conditionally put the ls text logo on the page
     \ifthenelse{\c@framenumber=1 \OR \NOT \boolean{beamer@compress}}
     {\pgftext[left,bottom,at=\uTextColorPosLight]{\pgfuseimage{uTextColor}}}%
     {}%
@@ -252,15 +252,15 @@
 % ----------------------------------------------------------------------------
 % *** BACKGROUND <<<
 % ----------------------------------------------------------------------------
-\defbeamertemplate*{background canvas}{ua theme}
+\defbeamertemplate*{background canvas}{ls theme}
 {%
   \ifthenelse{ \boolean{beamer@dark} \OR \(\boolean{beamer@darktitle}\AND\c@framenumber=1\) }
   % *** THEN ***
   {%
     \ifnum\c@framenumber=1%
-      \pgfuseimage{uaBackgroundDark}
+      \pgfuseimage{lsBackgroundDark}
     \else%
-      \pgfuseimage{uaBackgroundLight}%
+      \pgfuseimage{lsBackgroundLight}%
     \fi%
   }
   % *** ELSE ***

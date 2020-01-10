@@ -1,23 +1,21 @@
-# UA beamer theme
+# LS beamer theme
 
-[![Build Status](https://travis-ci.org/nschloe/ua-beamer.svg?branch=master)](https://travis-ci.org/nschloe/ua-beamer)
+[![Build Status](https://travis-ci.org/MTRNord/ls-beamer.svg?branch=master)](https://travis-ci.org/MTRNord/ls-beamer)
 
-This is a LaTeX beamer theme for the University of Antwerp. It
-is designed to match the official UA templates for Microsoft
-PowerPoint.
+This is a LaTeX beamer theme for the Lornsenschule Schleswig based on the Theme made by the University of Antwerp.
 
 ![dark title](/doc/manual/figures/dark-page1.png?raw=true "Optional Title")
 
 
 ### Installation
-Retrieve ua-beamer via [GitHub](https://github.com/nschloe/ua-beamer) and place
+Retrieve ls-beamer via [GitHub](https://github.com/MTRNord/ls-beamer) and place
 it in a directory where LaTeX can find it. For user installations on Unix, this is
 typically `~/texmf`. Running `texhash` may be required.
 
 You can check the integrity of your installation with
 ```
 $ kpsewhich beamerfontthemeUniversiteitAntwerpen.sty
-/home/username/texmf/tex/latex/ua-beamer/theme/beamerfontthemeUniversiteitAntwerpen.sty
+/home/username/texmf/tex/latex/ls-beamer/theme/beamerfontthemeUniversiteitAntwerpen.sty
 ```
 
 ### Usage
